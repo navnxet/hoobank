@@ -1,17 +1,17 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { Btn } from '@/components/index';
-import { features } from '@/constants';
-import { FeatureCardProps } from '@/types';
+import { Btn } from "@/components/index";
+import { features } from "@/constants";
+import { FeatureCardProps } from "@/types";
 
 export function FeatureCard({ icon, title, content }: FeatureCardProps) {
   return (
     <div className="even:bg-black-gradient hover:bg-black-gradient hover:shadow-card-shadow mb-6 flex flex-row rounded-[20px] p-6 last:mb-0">
-      <div className="flexCenter h-[64px] w-[64px] rounded-full bg-dimBlue">
+      <div className="flexCenter size-[64px] rounded-full bg-dimBlue">
         <Image
           src={icon}
           alt="icon"
-          className="h-auto w-auto object-contain"
+          className="size-auto object-contain"
           width={32}
           height={32}
           priority
@@ -35,7 +35,7 @@ export default function Business() {
       <div className="sectionInfo">
         <h2 className="heading2">
           You do the business, <br className="hidden sm:block" /> we&rsquo;ll
-          handle the money.{' '}
+          handle the money.{" "}
         </h2>
         <p className="paragraph mt-5 max-w-[470px]">
           With the credit card, you can improve your financial life by building

@@ -1,23 +1,21 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
-import { downloadApps } from '@/constants';
-import { bill } from '@/public';
-
-import { Button } from './ui/button';
+import { downloadApps } from "@/constants";
+import { bill } from "@/public";
 
 export default function Billing() {
   return (
     <main id="product" className="sectionReverse">
       <div className="sectionImgReverse">
         <Image
-          className="relative z-[5] h-auto w-auto"
+          className="relative z-[5] size-auto"
           src={bill}
           alt="bill"
           priority
         />
-        <div className="white__gradient absolute -left-1/4 top-0 z-[3] h-[50%] w-[50%] rounded-full"></div>
-        <div className="pink__gradient absolute -left-1/4 bottom-0 z-[0] h-[50%] w-[50%] rounded-full"></div>
+        <div className="white__gradient absolute -left-1/4 top-0 z-[3] size-[50%] rounded-full"></div>
+        <div className="pink__gradient absolute -left-1/4 bottom-0 z-[0] size-[50%] rounded-full"></div>
       </div>
 
       <div className="sectionInfo">
@@ -34,14 +32,14 @@ export default function Billing() {
             <Link
               href={app.url}
               key={idx}
-              className="relative h-fit w-fit overflow-hidden rounded-lg border border-solid border-white/20 p-0"
+              className="relative size-fit overflow-hidden rounded-lg border border-solid border-white/20 p-0"
             >
               <Image
                 src={app.icon}
                 alt={app.alter}
                 width={app.widthh}
                 height={app.heightt}
-                className="h-auto w-auto object-contain"
+                className="size-auto object-contain"
                 priority
               />
               <span className="shine"></span>

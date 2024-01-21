@@ -1,7 +1,7 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { Btn } from '@/components/index';
-import { card } from '@/public';
+import { Btn } from "@/components/index";
+import { card } from "@/public";
 
 export default function CardDeal() {
   return (
@@ -18,7 +18,7 @@ export default function CardDeal() {
         <Btn label="Get Started" className="mt-10" />
       </div>
       <div className="sectionImg">
-        <Image src={card} alt="card" className="h-auto w-auto" priority />
+        <Image src={card} alt="card" className="size-auto" priority />
       </div>
     </main>
   );

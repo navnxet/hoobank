@@ -1,7 +1,7 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { GetStarted } from '@/components/index';
-import { discount, robot } from '@/public';
+import { GetStarted } from "@/components/index";
+import { discount, robot } from "@/public";
 
 export default function Hero() {
   return (
@@ -11,18 +11,18 @@ export default function Hero() {
           <Image
             src={discount}
             alt="discount"
-            className="h-[32px] w-[32px]"
+            className="size-[32px]"
             priority
           />
           <p className="paragraph ml-2 text-[15px] sm:text-[18px]">
-            <span className="text-white">20%</span> Discount For{' '}
+            <span className="text-white">20%</span> Discount For{" "}
             <span className="text-white">1 Month</span> Account
           </p>
         </div>
         <div className="flexBetween w-full flex-row">
           <h1 className="flex-1 text-[52px] font-semibold leading-[75px] ss:text-[72px] ss:leading-[100px]">
             The Next
-            <br className="hidden sm:block" />{' '}
+            <br className="hidden sm:block" />{" "}
             <span className="text-gradient">Generation</span>
           </h1>
           <div className="mr-0 hidden ss:flex md:mr-4">
@@ -42,12 +42,12 @@ export default function Hero() {
         <Image
           src={robot}
           alt="robot-hand"
-          className="relative z-[5] h-full w-full"
+          className="relative z-[5] size-full"
           priority
         />
         <div className="pink__gradient absolute top-0 z-0 h-[35%] w-[40%]"></div>
-        <div className="white__gradient z-1 absolute bottom-40 h-[80%] w-[80%] rounded-full"></div>
-        <div className="blue__gradient absolute bottom-20 right-20 z-0 h-[50%] w-[50%]"></div>
+        <div className="white__gradient z-1 absolute bottom-40 size-[80%] rounded-full"></div>
+        <div className="blue__gradient absolute bottom-20 right-20 z-0 size-[50%]"></div>
       </div>
       <div className="flexCenter ss:hidden">
         <GetStarted />
