@@ -10,7 +10,6 @@ export type BtnProps = {
 };
 
 export type FeedbackCardProps = {
-  id: string;
   content: string;
   name: string;
   title: string;
