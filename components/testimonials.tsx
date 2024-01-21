@@ -1,16 +1,10 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { feedback } from '@/constants';
-import { quotes } from '@/public';
-import { FeedbackCardProps } from '@/types';
+import { feedback } from "@/constants";
+import { quotes } from "@/public";
+import { FeedbackCardProps } from "@/types";
 
-export function FeedbackCard({
-  id,
-  content,
-  name,
-  title,
-  img,
-}: FeedbackCardProps) {
+export function FeedbackCard({ content, name, title, img }: FeedbackCardProps) {
   return (
     <main className="feedback-card first:bg-black-gradient my-5 mr-0 flex max-w-[370px] flex-col justify-between rounded-[20px] px-10 py-12 last:mb-0 sm:mr-5 md:mr-10">
       <Image
@@ -47,14 +41,14 @@ export function FeedbackCard({
 export default function Testimonials() {
   return (
     <main id="clients" className="paddingY flexCenter relative flex-col">
-      <div className="blue__gradient absolute right-[-50%] z-0 h-[60%] w-[60%] rounded-full"></div>
+      <div className="blue__gradient absolute right-[-50%] z-0 size-[60%] rounded-full"></div>
       <div className="flexBetween relative z-[1] mb-6 w-full flex-col sm:mb-16 md:flex-row">
         <h2 className="heading2">
           What people are <br className="hidden sm:block" /> saying about us
         </h2>
         <div className="mt-6 w-full md:mt-0">
           <p className="paragraph max-w-[450px] text-left">
-            Everything you ness to accept card payments{' '}
+            Everything you ness to accept card payments{" "}
             <br className="hidden sm:block" /> and grow your business anywhere
             on the planet.
           </p>
